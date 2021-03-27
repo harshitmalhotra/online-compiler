@@ -29,7 +29,7 @@ def run():
             output = java_complier_output(code, inp, chk)
         elif lang == 'python':
             output = python_complier_output(code, inp, chk)
-        return render_template('{{ output }}')
+        return output
 
 def c_complier_output(code, inp, chk):
     if not os.path.exists('main.c'):
