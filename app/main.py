@@ -1,3 +1,7 @@
+from flask import Flask,render_template,request
+import subprocess,os
+from subprocess import PIPE
+
 app = Flask(__name__)
 
 @app.route('/run', methods=['POST'])
