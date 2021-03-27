@@ -105,3 +105,5 @@ def python_complier_output(code, inp, chk):
         return r.stdout.decode("utf-8")
     else:
         return r.stderr.decode("utf-8")
+    
+    
