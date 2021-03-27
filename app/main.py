@@ -49,7 +49,7 @@ def complier_output(code,inp,chk):
 	#close the file descriptor.
 	os.close(fd)
 	#Compiling the c program file and retrieving the error if any. 
-	s=subprocess.run(['gcc','-o','new','Try.c'],stderr=PIPE,)
+	s = subprocess.run(['gcc', '--sysroot=/app/.apt', 'Try.c', '-lm'], stderr=PIPE, )
 	#storing the value returned by return code.
 	check=s.returncode
 	#checking whether program compiled succesfully or not.
@@ -57,10 +57,10 @@ def complier_output(code,inp,chk):
 		#cheking whether input for program is enabled or not.
 		if chk=='1':
 			#executing the program with input.
-			r=subprocess.run(["new.exe"],input=inp.encode(),stdout=PIPE)
+			r=subprocess.run(["./a.out"],input=inp.encode(),stdout=PIPE)
 		else:
 			#executing the program without input.
-			r=subprocess.run(["new.exe"],stdout=PIPE)
+			r=subprocess.run(["./a.out"],stdout=PIPE)
 		#return the output of the program.	
 		return r.stdout.decode("utf-8")
 	else:
