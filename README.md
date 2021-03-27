@@ -3,7 +3,7 @@
 
 ## About
 
-This is a web application developed as part of a course project. Users can use the C, C++, Java and Python compilers.
+This is a web application developed as part of a btp project. Users can use the C, C++, Java and Python compilers.
 
 Users can do two things:
 
