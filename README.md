@@ -3,7 +3,7 @@
 
 ## About
 
-This is a web application developed as part of a btp project. Users can use the C, C++, Java and Python compilers.
+This is a web application developed as part of a btp project. Users can use the Java compiler.
 
 Users can do two things:
 
